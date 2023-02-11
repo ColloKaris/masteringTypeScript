@@ -29,3 +29,23 @@ function rando(num: number){
     }
     return num;
 }
+
+const colors = ['red', 'orange', 'yellow'];
+colors.map(color => {
+    return color.toUpperCase();
+})
+
+function printTwice(msg: string): void {
+    console.log(msg);
+    console.log(msg);
+}
+
+//NEVER
+function makeError(msg: string): never{
+    throw new Error(msg);
+}
+function gameloop(): never{
+    while(true){
+        console.log("GAME LOOP RUNNING")
+    }
+}
