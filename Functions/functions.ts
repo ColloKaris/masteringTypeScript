@@ -49,3 +49,18 @@ function gameloop(): never{
         console.log("GAME LOOP RUNNING")
     }
 }
+
+//EXERCISE 1
+function twoFer(name: string = "you"): string {
+    return `one for ${name}, one for me`
+}
+console.log(twoFer());
+console.log(twoFer("Elvis"))
+
+//EXERCISE 2
+function isLeapYear(year: number): boolean {
+    if((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)){
+        return true;
+    }
+    return false;
+}
