@@ -16,3 +16,19 @@ tvShow = "The other two";
 let isFunny = false;
 isFunny = true;
 //isFunny = "asd";
+
+// the any type
+// let thing: any = "hello";
+// thing = 1;
+// thing = false;
+// thing()
+// thing.toUpperCase();
+
+const movies = ["Arrival", "The Thing", "Aliens", "Amadeus"];
+let foundMovie: string;
+
+for (let movie of movies) {
+    if (movie === "Amadeus") {
+        foundMovie = "Amadeus";
+    }
+}
