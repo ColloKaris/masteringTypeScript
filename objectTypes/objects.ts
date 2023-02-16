@@ -14,10 +14,10 @@
 // printName({last: "Mick", first: "Jagger"})
 
 //DEFINING YOUR OWN TYPE ALIAS
-type Point = {
-    x: number;
-    y: number;
-};
+// type Point = {
+//     x: number;
+//     y: number;
+// };
 
 
 //without using alias
@@ -70,3 +70,59 @@ const mySong: Song = {
 const earnings = calculatePayout(mySong);
 console.log(earnings);
 printSong(mySong);
+
+//OPTIONAL PROPERTIES
+type Point = {
+    x: number;
+    y: number;
+    z?: number;
+};
+
+const myPoint: Point = {x: 1, y: 3};
+
+//THE READONLY MODIFIER
+type User = {
+    readonly id: number;
+    username: string;
+}
+
+const user: User = {
+    id: 12837,
+    username: "catgurl"
+}
+
+console.log(user.id);
+
+//INTERSECTION TYPES - we can have multiple types, then combine them
+//using an ampersand &
+type Circle = {
+    radius: number;
+}
+
+type Colorful = {
+    color: string;
+}
+
+type ColorfulCircle = Circle & Colorful;
+
+const happyFace: ColorfulCircle = {
+    radius: 4,
+    color: 'yellow'
+}
+
+type Cat = {
+    numLives: number;
+}
+type Dog = {
+    breed: string
+}
+
+type CatDog = Cat & Dog & {
+    age: number;
+}
+
+const christy: CatDog = {
+    numLives: 7,
+    breed: "Husky",
+    age: 9
+}
