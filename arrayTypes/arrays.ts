@@ -24,3 +24,6 @@ const board: string[][] = [["X", "O", "X"], ["X", "O", "X"], ["X", "O", "X"]]
 
 //Three dimensional array - stick to 2 dimensional arrays though
 const demo: number[][][] = [[[1]]];
+
+//was a tough day today didn't code at all
+//but I'll make it up tomorrow
