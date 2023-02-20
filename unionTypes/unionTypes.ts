@@ -31,3 +31,13 @@ function calculateTax(price: number | string, tax: number){
     }
     return price * tax;
 }
+
+//UNION TYPES AND ARRAYS
+//const num: number[] = [1,2,3,4]
+//const stuff: any[] = [1,2,3, true, "any"]
+
+const stuff: (number | string)[] = [1, 2, 3, "das"]
+
+const coords: (Point | Loc) [] = []
+coords.push( {lat: 321, long: 23})
+coords.push({x: 233, y: 234})
