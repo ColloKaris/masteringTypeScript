@@ -38,6 +38,18 @@ function calculateTax(price: number | string, tax: number){
 
 const stuff: (number | string)[] = [1, 2, 3, "das"]
 
-const coords: (Point | Loc) [] = []
-coords.push( {lat: 321, long: 23})
-coords.push({x: 233, y: 234})
+const coords: (Point | Loc) [] = [];
+coords.push( {lat: 321, long: 23});
+coords.push({x: 233, y: 234});
+
+//LITERAL TYPES
+let zero: 0 = 0;
+let hi: "hi" = "hi";
+
+let mood: "Happy" | "Sad" = "Happy";
+mood = "Sad";
+
+type DayOfWeek = "Monday" | "Tuesday" | "Wednesday" | "Thursday" | "Friday" | "Saturday" | "Sunday";
+
+let today: DayOfWeek = "Monday";
+
