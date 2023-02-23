@@ -97,3 +97,5 @@ const peirre: Engineer = {
     level: "Senior",
     languages: ["JS", "Python"]
 }
+
+//crazy shit didn't code, I was down bad
