@@ -1,6 +1,5 @@
 "use strict";
-function printDouble(msg) {
-    console.log(msg);
-    console.log(msg);
-}
-printDouble("HELLO WORLD :)");
+const btn = document.getElementById("btn");
+btn.addEventListener("click", function () {
+    alert("CLICKED!!");
+});
