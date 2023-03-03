@@ -8,4 +8,5 @@ btn.addEventListener("click", function() {
 let mystery: unknown = "Hello World!!!";
 
 const numChars = (mystery as string).length
+//didn't code but will change this
 
