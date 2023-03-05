@@ -15,3 +15,5 @@ form.addEventListener("submit", (e) => {
     list.append(newLI);
     input.value = '';
 })
+
+//Sunday did not code but tomorrow I am back at it
