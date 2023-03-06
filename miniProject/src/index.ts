@@ -9,7 +9,16 @@ const form = document.querySelector("form")!;
 const list = document.querySelector("ul")!;
 
 
-const todos: Todo[] = [];
+const todos: Todo[] = readTodos();
+todos.forEach(createTodo)
+
+//READ ITEMS FROM LOCAL STORAGE
+function readTodos(): Todo[] {
+    const todosJSON = localStorage.getItem("todos");
+    //TYPE NARROWING
+    if(todosJSON === null) return [];
+    return JSON.parse(todosJSON);
+}
 
 
 form.addEventListener("submit", (e) => {
@@ -20,6 +29,10 @@ form.addEventListener("submit", (e) => {
     }
     createTodo(newTodo)
     todos.push(newTodo);
+
+    //SAVE TO LOCAL STORAGE
+    localStorage.setItem("todos", JSON.stringify(todos));
+
     input.value = '';
 })
 
