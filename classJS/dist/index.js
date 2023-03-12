@@ -26,6 +26,8 @@ const player1 = new Player("blue", "steele");
 // console.log(player1.last);
 // console.log(player1)
 
+//git add changes
+
 const player2 = new Player("charlie", "brown");
 //player2.taunt();
 
