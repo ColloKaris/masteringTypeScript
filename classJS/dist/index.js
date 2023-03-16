@@ -17,6 +17,15 @@ class Player {
     updateScore(newScore){
         this.#score = newScore;
     }
+
+    //Getter
+    get fullName(){
+        return `${this.first} ${this.last}`
+    }
+
+    get score(){
+        return this.#score;
+    }
 }
 
 const player1 = new Player("blue", "steele");
@@ -37,3 +46,6 @@ const player2 = new Player("charlie", "brown");
 console.log(player1.getScore());
 player1.updateScore(28);
 console.log(player1.getScore());
+
+console.log(player1.fullName);
+console.log(player1.score)
