@@ -49,3 +49,4 @@ console.log(player1.getScore());
 
 console.log(player1.fullName);
 console.log(player1.score)
+//changes to be made
