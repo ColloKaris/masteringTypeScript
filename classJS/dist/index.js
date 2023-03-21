@@ -26,6 +26,20 @@ class Player {
     get score(){
         return this.#score;
     }
+    
+    //Setter
+    set score(newScore){
+        if (newScore < 0) {
+            throw new Error("Score must be positive!");
+        }
+        this.#score = newScore
+    }
+    set fullName(newName){
+        newName.split("");
+        const [first, last] = newName.split(" ");
+        this.first = first;
+        this.last = last;
+    }
 }
 
 const player1 = new Player("blue", "steele");
@@ -37,19 +51,27 @@ const player1 = new Player("blue", "steele");
 
 //git add changes
 
-const player2 = new Player("charlie", "brown");
+//const player2 = new Player("charlie", "brown");
 //player2.taunt();
 
 // console.log(player1.numLives);
 // player1.loseLife();
 // console.log(player1.numLives)
-console.log(player1.getScore());
-player1.updateScore(28);
-console.log(player1.getScore());
+//console.log(player1.getScore());
+//player1.updateScore(28);
+//console.log(player1.getScore());
+
+//Testing getters, which are then used like properties
+//and not the methods that they are
+// console.log(player1.fullName);
+// console.log(player1.score)
+
+//Testing setters
+// player1.score = 133
+// console.log(player1.score)
 
 console.log(player1.fullName);
-console.log(player1.score)
-//changes to be made
-//morechanges
-//didn't code on sunday
-//4day no code
+player1.fullName = "Amy Adams";
+console.log(player1.fullName);
+
+
