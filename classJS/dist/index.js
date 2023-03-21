@@ -43,6 +43,12 @@ class Player {
     }
 }
 
+class AdminPlayer extends Player{
+    isAdmin = true;
+}
+
+const admin = new AdminPlayer()
+
 const player1 = new Player("blue", "steele");
 //console.log(player1);
 //player1.taunt();
