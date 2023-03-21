@@ -1,4 +1,5 @@
 class Player {
+    static description = "Player in Our Game"
     #score = 0; //makes it a private field
     #numLives = 10;
     constructor(first, last){
