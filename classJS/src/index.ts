@@ -20,7 +20,7 @@ class Player {
     constructor(
         public first: string,
         public last: string,
-        private _score: number) {}
+        protected _score: number) {}
 
     private secretMethod(): void {
         console.log("SECRET METHOD!")
@@ -41,6 +41,14 @@ class Player {
         this._score = newScore;
     }
 
+}
+
+//To show protected modifier
+class SuperPlayer extends Player {
+    public isAdmin: boolean = true;
+    maxScore(){
+        this._score = 999999999;
+    }
 }
 
 const elton = new Player("Elton", "Steele", 100);
