@@ -118,3 +118,5 @@ console.log(betty.getPay());
 
 const bill = new PartTimeEmployee("Bill", "Billerson", 24, 1100);
 console.log(bill.getPay());
+
+//chang
