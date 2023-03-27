@@ -28,4 +28,6 @@ function getRandomElement<T>(list: T[]): T{
     return list[randIdx];
 }
 
-getRandomElement<string>(["hello", "from", "the", "other"])
+getRandomElement([true, false])
+
+//git add productivity
