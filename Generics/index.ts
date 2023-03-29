@@ -19,6 +19,7 @@ interface Cat {
 function identity<Type>(item: Type): Type {
     return item;
 }
+//
 
 identity<string>("7")
 
