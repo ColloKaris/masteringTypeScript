@@ -21,6 +21,9 @@ function identity<Type>(item: Type): Type {
 }
 //
 
+
+
+
 identity<string>("7")
 
 //ANOTHER GENERIC ELEMENT
