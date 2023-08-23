@@ -1,0 +1,11 @@
+{
+  "name": "classrecap",
+  "version": "1.0.0",
+  "description": "Recapping JavaScript Classes for a TypeScript course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Collins Kariuki",
+  "license": "ISC"
+}
