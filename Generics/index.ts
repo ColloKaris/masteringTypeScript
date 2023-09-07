@@ -47,16 +47,19 @@ function makeEmptyArray<T = number>(): T[]{
     return []
 }
 
+
 interface Song {
     title: string;
     artist: string;
 }
+
 
 interface Video {
     title: string;
     creator: string;
     resolution: string;
 }
+
 
 class Playlist<T> {
     public queue: T[] = [];
